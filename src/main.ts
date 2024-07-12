@@ -13,7 +13,7 @@ async function bootstrap() {
   
   // Define the views directory (create it in the project root directory)
   const views = join(__dirname, '..', 'views');
-  const users = join(__dirname, '..', 'views/users');
+
   //Define the static directory (create it in the project root directory )
   const staticAssets = join(__dirname, '..', 'static'); app.useStaticAssets(staticAssets);
   // Configure Nunjucks, setting views and the Express instance declared above
