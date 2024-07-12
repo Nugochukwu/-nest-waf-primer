@@ -5,22 +5,18 @@ import { join } from 'path';
 import * as nunjucks from 'nunjucks';
 
 async function bootstrap() {
-  // Create a Nest application with Express under the hood
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  
-  // Get the underlying Express instance
-  const express = app.getHttpAdapter().getInstance();
-  
-  // Define the views directory (create it in the project root directory)
-  const views = join(__dirname, '..', 'views');
 
-  //Define the static directory (create it in the project root directory )
-  const staticAssets = join(__dirname, '..', 'static'); app.useStaticAssets(staticAssets);
-  // Configure Nunjucks, setting views and the Express instance declared above
-  nunjucks.configure(views, { express });
- 
+  const viewsDir = join(__dirname, '..', 'views');
+  const staticDir = join(__dirname, '..', 'public');
 
-  // Start the application
+  app.useStaticAssets(staticDir);
+
+  nunjucks.configure(viewsDir, {
+    autoescape: true,
+    express: app.getHttpAdapter().getInstance(),
+  });
+
   await app.listen(3000);
 }
 

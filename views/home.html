@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/main.css" />
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block body %}
     <div class="grid-container">
         <div class="navigation-bar grid-item-row-1">
             <div class="navigation-bar-left">
@@ -50,6 +46,4 @@
             <p>We can give the area a height beyond the few text, for better visibility too</p>
         </div>
     </div>
-    
-</body>
-</html>
+    {% endblock %}
