@@ -10,10 +10,10 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get('hello')
-  @Render('home.html') // Specify the template relative to the 'views' directory
+  @Get('hello2')
+  @Render('index.html') // Specify the template relative to the 'views' directory
   getHello2(): {} {
-    return this.appService.getHome();
+    return this.appService.getHello2();
   }
   @Get('hello')
 @Render('home.html')
@@ -24,6 +24,11 @@ return this.appService.getHome();
 @Render('about-us.html')
 getAboutUs(): {} {
 return this.appService.getAboutUs();
+}
+@Get('layout')
+@Render('layout.html')
+getLayout(): {} {
+return this.appService.getLayout();
 }
 
 }

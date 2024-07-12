@@ -12,5 +12,9 @@ return {message: 'Hello World!', title: 'My Greeting App'};
     return {title: 'Home Page'};
     }
     getAboutUs(): {} {
-    return {title: 'About Us Page'};}
+    return {title: 'About Us Page'};
+  }
+  getLayout(): {} {
+    return {title: 'Layout Page'};
+  }
 }
