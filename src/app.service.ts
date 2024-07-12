@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    return 'yo!';
   }
   getHello2(): {} {
 return {message: 'Hello World!', title: 'My Greeting App'};
@@ -16,5 +16,8 @@ return {message: 'Hello World!', title: 'My Greeting App'};
   }
   getLayout(): {} {
     return {title: 'Layout Page'};
+  }
+  getCreateUser(): {} {
+    return {title: 'Create User Page'};
   }
 }
