@@ -37,6 +37,7 @@ $ npm install nunjucks
 
 $ psql -U postgres
 $ CREATE DATABASE "nest-waf-primer";
+#Creating a database named nest-waf-primer
 
 #address/host:
 localhost
