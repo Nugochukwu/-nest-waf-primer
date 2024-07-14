@@ -36,9 +36,16 @@ $ npm install nunjucks
 ## Setting up Postgres 
 
 $ psql -U postgres
-password: postgres
 $ CREATE DATABASE "nest-waf-primer";
 
+#address/host:
+localhost
+#username:
+postgres
+#port:
+5432
+#password: 
+postgres
 
 ```
 
@@ -54,6 +61,8 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+##Server Link
+http://localhost:3000/
 
 ## Test
 
