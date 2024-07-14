@@ -27,7 +27,8 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 The Project is a simple web stack which allows users to input student details to the webservers where it will be stored in a psql database.
 ```
-Requirements
+Requirements:
+
 PostgresSQL needs to be setup to run the program
 
 ```
