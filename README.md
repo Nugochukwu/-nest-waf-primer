@@ -31,6 +31,14 @@ The Project is a simple web stack which allows users to input student details to
 
 ```bash
 $ npm install
+$ npm install nunjucks
+
+## Setting up Postgres
+
+$ psql -U postgres
+$ CREATE DATABASE "nest-waf-primer";
+
+
 ```
 
 ## Running the app
